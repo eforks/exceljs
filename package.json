@@ -1,7 +1,7 @@
 {
-  "name": "exceljs",
+  "name": "exceljs-fast",
   "version": "4.2.0",
-  "description": "Excel Workbook Manager - Read and Write xlsx and csv Files.",
+  "description": "Fork of: Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
   "license": "MIT",
   "author": {
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/exceljs/exceljs.git"
+    "url": "https://github.com/eforks/exceljs.git"
   },
   "engines": {
     "node": ">=8.3.0"

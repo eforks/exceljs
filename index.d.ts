@@ -1,3 +1,5 @@
+import { Duplex } from 'stream'
+
 declare interface Buffer extends ArrayBuffer { }
 
 export declare enum RelationshipType {
@@ -1301,6 +1303,8 @@ export interface Worksheet {
 	mergeCellsWithoutStyle(v: [number, number, number, number]): void;
 	mergeCellsWithoutStyle(v: [number, number, number, number, string]): void;
 
+	dangerousMergeCells(tl: string, br: string): void;
+
 	/**
 	 * unmerging the cells breaks the style links
 	 */
@@ -1940,6 +1944,8 @@ export namespace stream {
 		}
 
 		class WorkbookWriter extends Workbook {
+			stream: ReadableStream
+
 			constructor(options: Partial<WorkbookStreamWriterOptions>);
 			// commit all worksheets, then add suplimentary files
 			commit(): Promise<void>;
