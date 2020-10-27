@@ -1,6 +1,6 @@
 {
   "name": "exceljs-fast",
-  "version": "4.2.0",
+  "version": "5.0.0",
   "description": "Fork of: Excel Workbook Manager - Read and Write xlsx and csv Files.",
   "private": false,
   "license": "MIT",
