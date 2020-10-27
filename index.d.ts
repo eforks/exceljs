@@ -1,4 +1,4 @@
-import { Duplex } from 'stream'
+import { Duplex, Stream } from 'stream'
 
 declare interface Buffer extends ArrayBuffer { }
 
@@ -1944,7 +1944,7 @@ export namespace stream {
 		}
 
 		class WorkbookWriter extends Workbook {
-			stream: ReadableStream
+			stream: Stream
 
 			constructor(options: Partial<WorkbookStreamWriterOptions>);
 			// commit all worksheets, then add suplimentary files
